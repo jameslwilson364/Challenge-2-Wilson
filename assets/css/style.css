@@ -22,11 +22,15 @@ main {
     flex-wrap: wrap;
     flex-grow: 1;
 }
+
 aside {
-  flex: 1;
-  background-color: #b9c6ae;
-  padding: 80px;
+  background-color: #e9ede5;
+  padding: 20px;
+  margin: 20px;
+  width: 250px;
   text-align: left;
+  height:1000px;
+  position: relative;
 }
 
 .wilson {
@@ -56,12 +60,73 @@ aside {
     color:white;
 }
 
+.contentfocus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+#panda {
+    display:flex;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
 
 .intro p {
     display: inline-block;
     width: 500px;
-    height: 200px;
-    border: 10px solid black;
+    height: 125px;
+    border: 5px solid black;
+    justify-content: center;
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+section .challenge1 {
+    display: inline-block;
+    border-radius: 10%;
+}
+
+section .challenge1 header {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.challenge1 {
+    padding: 20px;
+    margin: 20px;
+}
+
+.challenge1 #ch1 {
+    height: 300px;
+    width: 300px;
+}
+
+.challenge2 {
+    padding: 20px;
+    margin: 20px;
+}
+section .challenge2 header {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.challenge2 #ch2 {
+    height: 300px;
+    width: 300px;
 }
 
 footer {
@@ -72,7 +137,15 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 15px;
+    position: relative;
 }
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
 
 footer a {
     color: white;
