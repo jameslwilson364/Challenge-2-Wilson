@@ -16,6 +16,7 @@ header {
     background-color: rgb(11, 94, 11);
     padding: 10px;
     text-align: left;
+    z-index: 1;
 }
 
 h1 {
@@ -36,11 +37,17 @@ nav {
 aside {
     flex: 1;
     background-color: rgb(11, 94, 11);
-    padding: 40px;
-    width: 10%;
+    padding: 20px;
+    width: 8%;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    
+    padding-top: 200px;
     display: block;
     text-align: left;
-    opacity: .65;
+    opacity: .5;
 }
 
 /* footer is set to auto lock at the bottom of the page */
@@ -174,7 +181,7 @@ footer a {
     border: none;
 }
 
-#panda:hover {
+.contentitem:hover {
     transform: scale(1.25);
     .hidden {
         display: block;
