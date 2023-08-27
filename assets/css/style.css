@@ -105,6 +105,20 @@ footer a {
     
 }
 
+.selfie {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+}
+
+.selfie #me {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
 .contentfocus {
     padding: 10px;
     margin: 10px;
@@ -138,6 +152,9 @@ footer a {
 
 .contentitem .hidden {
     display: none;
+    list-style: bullet;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
 }
 
 .contentitem img {
@@ -158,10 +175,10 @@ footer a {
 }
 
 #panda:hover {
-    .hidden {
-      display: block;
-    }
     transform: scale(1.25);
+    .hidden {
+        display: block;
+    }
 }
 
 
