@@ -1,13 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
 }
 
+/* header section consists of header, h1 and the class wilson that creates cursive display */
 header {
     background-color: rgb(11, 94, 11);
-    padding: 20px;
-    display: inline-flexbox;
-    
+    padding: 10px;
+    text-align: left;
 }
 
 h1 {
@@ -16,21 +24,41 @@ h1 {
     color:whitesmoke;
 
 }
-
-main {
+/* nav and external links class displays the links for my repo and the UTSA gitlab page */
+nav {
+    background-color: rgb(11, 94, 11);
     display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    justify-content: right;
+    padding: 10px; 
 }
 
+/* aside is a placeholder for a future menu that hangs on the left portion of the page */
 aside {
-  background-color: #e9ede5;
-  padding: 20px;
-  margin: 20px;
-  width: 250px;
-  text-align: left;
-  height:1000px;
-  position: relative;
+    flex: 1;
+    background-color: rgb(11, 94, 11);
+    padding: 40px;
+    width: 10%;
+    display: block;
+    text-align: left;
+    opacity: .65;
+}
+
+/* footer is set to auto lock at the bottom of the page */
+footer {
+    background-color: rgb(11, 94, 11);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+footer a {
+    color: white;
 }
 
 .wilson {
@@ -60,16 +88,65 @@ aside {
     color:white;
 }
 
-.contentfocus {
+.intropara {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    height: 10%;
     justify-content: center;
+    font-family: cursive;
+}
+
+#introduction {
+    display: flex;
     padding: 10px;
     margin: 10px;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.contentfocus {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.contentitem {
+    padding: 20px;
+    margin: 20px;
+}
+
+.contentitem p {
+    text-align: left;
+    width: 300px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contentitem header {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.contentitem header a {
+    color:white;
+}
+
+.contentitem .hidden {
+    display: none;
+}
+
+.contentitem img {
+    height: 300px;
+    width: 400px;
+    border: 1px solid black;
 }
 
 #panda {
-    display:flex;
     height: 300px;
     width: 300px;
     padding: 20px;
@@ -77,68 +154,17 @@ aside {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    border: none;
 }
 
-.intro p {
-    display: inline-block;
-    width: 500px;
-    height: 125px;
-    border: 5px solid black;
-    justify-content: center;
-    border-radius: 10%;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
+#panda:hover {
+    .hidden {
+      display: block;
+    }
+    transform: scale(1.25);
 }
 
-section .challenge1 {
-    display: inline-block;
-    border-radius: 10%;
-}
 
-section .challenge1 header {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-
-.challenge1 {
-    padding: 20px;
-    margin: 20px;
-}
-
-.challenge1 #ch1 {
-    height: 300px;
-    width: 300px;
-}
-
-.challenge2 {
-    padding: 20px;
-    margin: 20px;
-}
-section .challenge2 header {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-}
-
-.challenge2 #ch2 {
-    height: 300px;
-    width: 300px;
-}
-
-footer {
-    background-color: rgb(11, 94, 11);
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    text-align: center;
-    padding: 20px;
-    margin-top: 15px;
-    position: relative;
-}
 
 @media screen and (max-width: 768px) {
     main,
@@ -147,6 +173,3 @@ footer {
     }
   }
 
-footer a {
-    color: white;
-}
