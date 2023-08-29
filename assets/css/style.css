@@ -67,11 +67,13 @@ footer a {
     color: white;
 }
 
+/* applies special formatting to highlight Wilson's in the header */
 .wilson {
     font-size: 60px;
     font-family: cursive;
 }
 
+/* formats the external links in the nav section */
 .external-links {
     padding-top: 10px;
     margin-right: 30px;
@@ -94,6 +96,7 @@ footer a {
     color:white;
 }
 
+/* centers and formats intro paragraph */
 .intropara {
     display: flex;
     width: 100%;
@@ -111,6 +114,7 @@ footer a {
     
 }
 
+/* centers and adjusts the size of my profile picture */
 .selfie {
     display: flex;
     width: 100%;
@@ -125,6 +129,7 @@ footer a {
     padding: 10px;
 }
 
+/* formats content section with the three content items */
 .contentfocus {
     padding: 10px;
     margin: 10px;
@@ -180,6 +185,7 @@ footer a {
     border: none;
 }
 
+/* creates psuedo class to display hidden text when the cursor hovers over the panda image */
 .contentitem:hover {
     transform: scale(1.25);
     .hidden {
@@ -188,7 +194,7 @@ footer a {
 }
 
 
-
+/* adjusts display for smaller screen */
 @media screen and (max-width: 768px) {
     main,
     nav {
