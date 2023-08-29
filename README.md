@@ -24,10 +24,10 @@ The main portions of the page that intended.
 The portfolio page is pretty straightforward.  You can follow the deployed link listed below, or conversely download my repo and run the index in a local browser.
 
 Page consists of the following
--index.html
--style.css (./assets/css/)
--reset.css (./assets/css/)
--various images used in the index (./assets/img/)
+- index.html
+- style.css (./assets/css/)
+- reset.css (./assets/css/)
+- various images used in the index (./assets/img/)
 
 https://jameslwilson364.github.io/Challenge-2-Wilson/
 
