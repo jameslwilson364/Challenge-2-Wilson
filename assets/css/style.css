@@ -175,26 +175,6 @@ footer a {
     border: 1px solid black;
 }
 
-#panda {
-    height: 300px;
-    width: 300px;
-    padding: 20px;
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    border: none;
-}
-
-/* creates psuedo class to display hidden text when the cursor hovers over the panda image */
-.contentitem:hover {
-    transform: scale(1.25);
-    .hidden {
-        display: block;
-    }
-}
-
-
 /* adjusts display for smaller screen */
 @media screen and (max-width: 768px) {
     main,
