@@ -21,7 +21,7 @@ header {
 
 h1 {
     background-color: rgb(11, 94, 11);
-    font-family:'Oswald';
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 48px;
     color:whitesmoke;
 
@@ -34,7 +34,7 @@ nav {
     padding: 10px; 
 }
 
-/* aside is a placeholder for a future menu that hangs on the left portion of the page 
+/*aside is a placeholder for a future menu that hangs on the left portion of the page*/
 aside {
     flex: 1;
     background-color: rgb(11, 94, 11);
@@ -49,7 +49,7 @@ aside {
     text-align: left;
     color: white;
     border-right: solid, black;
-}*/
+}
 
 /* footer is set to auto lock at the bottom of the page */
 footer {
@@ -58,7 +58,7 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin-top: 15px;
     bottom: 0;
     width: 100%;
@@ -146,13 +146,13 @@ footer a {
     margin: 10px;
 }
 
-/*
+
 .contentitem p {
     text-align: left;
     width: 300px;
     justify-content: center;
     padding: 10px;
-} */
+} 
 
 .contentitem header {
     color: white;
@@ -174,9 +174,9 @@ footer a {
 
 .contentitem img {
     height: 300px;
-    width: 497px;
+    width: 400px;
     border: 1px solid black;
-}
+} 
 
 /* adjusts display for smaller screen */
 @media screen and (max-width: 768px) {
